@@ -25,6 +25,7 @@ const States = () => {
         }
     }, [state]);
 
+    //get counteries
     const getCountries = async () => {
         try {
             const response = await fetch("https://crio-location-selector.onrender.com/countries");
@@ -40,6 +41,7 @@ const States = () => {
         }
     };
 
+    //get states
     const getStates = async () => {
         try {
             const response = await fetch(`https://crio-location-selector.onrender.com/country=${country}/states`);
@@ -55,6 +57,7 @@ const States = () => {
         }
     };
 
+    //get cities
     const getCities = async () => {
         try {
             const response = await fetch(`https://crio-location-selector.onrender.com/country=${country}/state=${state}/cities`);
