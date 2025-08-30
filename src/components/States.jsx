@@ -116,7 +116,7 @@ const States = () => {
                 {
                     country && state && city &&
                     <div>
-                        You selected {city} {state} {country}.
+                        You selected {city}, {state}, {country}.
                     </div>
                 }
             </div>
